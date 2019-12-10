@@ -32,6 +32,7 @@ public class SetPlayerPeaces : MonoBehaviour
         SetPeaceInit();
     }
 
+    //A função SetPeaceInit pega o nome da imagem salva no computador e busca no array de imagens, encontrando a imagem com o mesmo nome ele seta aquela imagem.
     public void SetPeaceInit()
     {
         if (PlayerPrefs.HasKey("Body"))

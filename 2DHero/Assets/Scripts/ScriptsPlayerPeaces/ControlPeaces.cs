@@ -17,6 +17,7 @@ public class ControlPeaces : MonoBehaviour
     public Image LegLeftPlayer;
     public Image LegRigthPlayer;
 
+    //No Método Start nós pegamos o nome da imagem salva no computador, procuramos ela no array e setamos no personagem
     private void Start()
     {
         if (PlayerPrefs.HasKey("Body"))
@@ -119,6 +120,7 @@ public class ControlPeaces : MonoBehaviour
 
     }
 
+    //Os Metodos Change... Servem para toda vez que clicar em alguma imagem de peça ela trocar a peça que o personagem está usando e salvar a peça nova
     public void ChangeBodyImage( Sprite sprite)
     {
         bodyImagensPlayer.sprite = sprite;

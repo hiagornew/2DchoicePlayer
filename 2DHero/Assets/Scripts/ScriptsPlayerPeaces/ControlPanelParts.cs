@@ -11,11 +11,14 @@ public class ControlPanelParts : MonoBehaviour
 
     private void Start()
     {
+        //Usamos a variavel static para poder acessar o array de qualquer outro script
         if(ControlPanelParts.CP == null)
         {
             ControlPanelParts.CP = this;
         }
     }
+
+    //A função SelectObjectActive pega como paremetro o nome do Painel, para quando ele clicar no painel, ativar aquele e desativar o outro
     public void SelectObjectActive(string name)
     {
         switch (name)
